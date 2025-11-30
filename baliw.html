@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Virtual Crib</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;        
+            background-position: center;  
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .button {
+            position: relative; /* For absolute positioning of buttons */
+            margin: 0 30px; /* Margin around the button section */
+        }
+        .c1, .c2, .c3, .c4 {
+            float: right;
+            height: 40px;
+            width: 120px;
+            margin-left: 20px; /* Spacing between buttons */
+            border-radius: 30px; /* Rounded corners */
+            border: 3px solid #68eea0;
+            cursor: pointer; /* Pointer cursor */
+            background-color: #7ED37F; /* Button background color */
+            transition: 0.5s; /* Hover transition */
+        }
+        .c1:hover, .c2:hover, .c3:hover, .c4:hover {
+            background: #fff; /* Change background on hover */
+            color: #162938; /* Change text color on hover */
+        }
+        /* Additional button hover effect */
+        .c1::after, .c2::after, .c3::after, .c4::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            background: #000;
+            border-radius: 5px;
+            left: 15px;
+            bottom: 5px;
+            transform: scaleX(0);
+            transition: 0.5s;
+        }
+        .c1:hover::after, .c2:hover::after, .c3:hover::after, .c4:hover::after {
+            transform: scaleX(1); /* Show underline on hover */
+        }
+        h1, h2 {
+            color: #E6E6FA; /* Light text color */
+            text-align: center; /* Center title */
+            font-family: Gabriola; /* Font style */
+        }
+        article {
+            width: calc(100% - 60px); /* Full width minus margins */
+            height: 540px;
+            background-color: #94C775; /* Article background color */
+            margin: 30px; /* Margin around article */
+            border: 3px solid #155515; /* Border color */
+            padding: 20px; /* Padding for content */
+        }
+        footer {
+            width: calc(100% - 60px); /* Full width minus margins */
+            position: relative; /* To avoid absolute positioning issues */
+            margin: 30px; /* Margin around footer */
+        }
+        nav {
+            background-color: #2e6e43; /* Footer background */
+        }
+        ul {
+            list-style: none; /* Remove bullets */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center; /* Center items */
+        }
+        li {
+            font-size: 30px; /* List item font size */
+            font-family: Freestyle Script; /* Custom font */
+            margin: 0 20px; /* Spacing between list items */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="c:\Users\saman\OneDrive\drafts\lebron2.png" alt="lebron.png" style="display: block; margin: auto; height: 175px;">
+    <img src="https://blob.gifcities.org/gifcities/CJ67WBH5N2LN4DFCQDOFTX7HKAWCTRZ6.gif"
+         alt="Retro GIF"
+         style="display:block; margin:auto; width:1500px;">
+</header>
+
+<nav class="button">
+    <button class="c1" onclick="location.href='https://www.pinterest.ph/pin/31314159903233953/'"><b>Sophia</b></button>
+    <button class="c2" onclick="location.href='https://i.pinimg.com/736x/47/27/d9/4727d9f8b74535e6be54cc7ee2bbec37.jpg'"><b>Juvela</b></button>
+    <button class="c3" onclick="location.href='https://jayhanmaynagcot.blogspot.com/2024/09/jais-adventures.html?m=1'"><b>Jayhan</b></button>
+    <button class="c4" onclick="location.href='https://youtu.be/BBpIV9A1PXc?list=RD899TFG9ELiY'"><b>Tan</b></button>
+</nav>
+
+<article>
+    <h2>₊✩‧₊˚Sophia Kassandra P. Cabantog∘✩‧₊</h2>
+    <img src="566591883_1487812145627113_2286148670218142503_n.jpg" style="float:left; margin-right:40px; height:450px; width:400px;">
+    <p style="font-family: cursive;">burikat</p>
+    <p style="text-align: justify; font-size: 16px;">I am Sophia Kassandra P. Cabantog from 11-ICT, and this is my presentation of my own personal crib. I like exploring new things and love to find new hobbies.<br> I have a few life passions, and managing them with my academics keeps me inspired and determined. Let's discuss my interests. <br> I read a lot because I find it so magical to lose yourself in a good book and discover new worlds and points of view. Any genre you can think of, fiction or non-fiction, I'm all for exploring them.<br> In terms of academics, I'm presently pursuing ICT. Examining the complexity of ICT is intriguing. I like the challenge of problem-solving and critical thinking that goes along with it.<br> But studying isn't the only thing to do! My interests and study habits help me stay energized and grounded. These passions boost my creativity and provide me with a boost of energy for the challenges that lie ahead,<br> whether I'm reading a captivating book or taking photographs of the lovely world.</p>
+</article>
+
+<footer>
+    <nav>
+        <ul>
+            
+            <li style="color:white; font-size: 20px; float:left; font-family: Stencil; list-style:none; margin-left: 50px" >Sophia</li>
+            <li style="color:white; font-size: 20px; float:left; font-family: Stencil; list-style:none; margin-left: 50px">Juvela</li>
+            <li style="color:white; font-size: 20px; float:left; font-family: Stencil; list-style:none; margin-left: 50px">Hans</li>
+            <li style="color:white; font-size: 20px; float:left; font-family: Stencil; list-style:none; margin-left: 50px">Tan</li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
